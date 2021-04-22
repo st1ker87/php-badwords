@@ -13,10 +13,13 @@
 <?php
     $string = 'Li vuoi quei kiwi? E se non vuoi quei kiwi che kiwi vuoi?';
     $lenght = strlen($string);
-    $newString = str_replace('kiwi', 'xxxx', $string);
+    $newString = str_replace($_GET["toReplace"], 'xxx', $string);
+    $newLenght = strlen($newString);
 ?>
 <h3><?php echo $string ?></h3>
 <h3>La lunghezza della stringa è:<?php echo $lenght ?></h3>
 <h3><?php echo $newString ?></h3>
+<h3>La lunghezza della nuova stringa è:<?php echo $newLenght ?></h3>
+<?php echo "Ciao <strong> Ciao </strong>" ?>
 </body>
 </html>
